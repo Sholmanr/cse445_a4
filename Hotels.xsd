@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<ha:schema xmlns:ha="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<!-- targetNameSpace= "http://www.venus.sod.asu.edu/WSRepository/xml"  -->
+
+    <ha:element name="Address">
+        <ha:complexType>
+            <ha:all>
+                <ha:element name="Number" type="ha:integer"/>
+                <ha:element name="Street" type="ha:string"/>
+                <ha:element name="City" type="ha:string"/>
+                <ha:element name="State">
+                    <ha:simpleType>
+                        <ha:restriction base="ha:string">
+                            <ha:pattern value="[A-Z][A-Z]"/>
+                        </ha:restriction>
+                    </ha:simpleType>
+                </ha:element>
+                <ha:element name="Zip">
+                    <ha:simpleType>
+                        <ha:restriction base="ha:string">
+                            <ha:pattern value="[0-9]{5}"/>
+                        </ha:restriction>
+                    </ha:simpleType>
+                </ha:element>
+            </ha:all>
+            <ha:attribute name="NearestAirport" type="ha:string" use="required"/>
+        </ha:complexType>
+    </ha:element>
+
+    <ha:element name="Hotel">
+            <ha:complexType>
+                <ha:all>
+                    <ha:element name="Name" type="ha:string" maxOccurs="1"/>
+                    <ha:element name="Phone">
+                        <ha:simpleType>
+                            <ha:restriction base="ha:string">
+                                <ha:pattern value="\d{3}-\d{3}-\d{4}"/>
+                            </ha:restriction>
+                        </ha:simpleType>
+                    </ha:element>
+                    <ha:element ref="Address"/>
+                </ha:all>
+                <ha:attribute name="rating"> 
+                    <ha:simpleType>
+                        <ha:restriction base="ha:double">
+                            <ha:minInclusive value="0.00"/>
+                            <ha:maxInclusive value="5.00"/>
+                        </ha:restriction>
+                    </ha:simpleType>
+            </ha:attribute>
+            </ha:complexType>
+        </ha:element>
+    
+        <ha:element name="Hotels">
+            <ha:complexType>
+                <ha:all>
+                    <ha:element ref="Hotel" minOccurs="1"/>
+                </ha:all>
+            </ha:complexType>
+        </ha:element>
+
+
+</ha:schema>
