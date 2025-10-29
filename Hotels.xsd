@@ -4,7 +4,7 @@
 
     <ha:element name="Address">
         <ha:complexType>
-            <ha:all>
+            <ha:sequence>
                 <ha:element name="Number" type="ha:integer"/>
                 <ha:element name="Street" type="ha:string"/>
                 <ha:element name="City" type="ha:string"/>
@@ -19,19 +19,21 @@
                     <ha:simpleType>
                         <ha:restriction base="ha:string">
                             <ha:pattern value="[0-9]{5}"/>
+                            <ha:minLength value="5"/>
+                            <ha:maxLength value="5"/>
                         </ha:restriction>
                     </ha:simpleType>
                 </ha:element>
-            </ha:all>
+            </ha:sequence>
             <ha:attribute name="NearestAirport" type="ha:string" use="required"/>
         </ha:complexType>
     </ha:element>
 
     <ha:element name="Hotel">
             <ha:complexType>
-                <ha:all>
+                <ha:sequence>
                     <ha:element name="Name" type="ha:string" maxOccurs="1"/>
-                    <ha:element name="Phone">
+                    <ha:element name="Phone" minOccurs="1" maxOccurs="unbounded">
                         <ha:simpleType>
                             <ha:restriction base="ha:string">
                                 <ha:pattern value="\d{3}-\d{3}-\d{4}"/>
@@ -39,8 +41,8 @@
                         </ha:simpleType>
                     </ha:element>
                     <ha:element ref="Address"/>
-                </ha:all>
-                <ha:attribute name="rating"> 
+                </ha:sequence>
+                <ha:attribute name="rating" use="optional"> 
                     <ha:simpleType>
                         <ha:restriction base="ha:double">
                             <ha:minInclusive value="0.00"/>
@@ -53,9 +55,9 @@
     
         <ha:element name="Hotels">
             <ha:complexType>
-                <ha:all>
-                    <ha:element ref="Hotel" minOccurs="1"/>
-                </ha:all>
+                <ha:sequence>
+                    <ha:element ref="Hotel" minOccurs="1" maxOccurs="unbounded"/>
+                </ha:sequence>
             </ha:complexType>
         </ha:element>
 
