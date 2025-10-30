@@ -1,65 +1,65 @@
 <?xml version="1.0"?>
-<ha:schema xmlns:ha="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 <!-- targetNameSpace= "http://www.venus.sod.asu.edu/WSRepository/xml"  -->
 
-    <ha:element name="Address">
-        <ha:complexType>
-            <ha:sequence>
-                <ha:element name="Number" type="ha:integer"/>
-                <ha:element name="Street" type="ha:string"/>
-                <ha:element name="City" type="ha:string"/>
-                <ha:element name="State">
-                    <ha:simpleType>
-                        <ha:restriction base="ha:string">
-                            <ha:pattern value="[A-Z][A-Z]"/>
-                        </ha:restriction>
-                    </ha:simpleType>
-                </ha:element>
-                <ha:element name="Zip">
-                    <ha:simpleType>
-                        <ha:restriction base="ha:string">
-                            <ha:pattern value="[0-9]{5}"/>
-                            <ha:minLength value="5"/>
-                            <ha:maxLength value="5"/>
-                        </ha:restriction>
-                    </ha:simpleType>
-                </ha:element>
-            </ha:sequence>
-            <ha:attribute name="NearestAirport" type="ha:string" use="required"/>
-        </ha:complexType>
-    </ha:element>
+    <xsd:element name="Address">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Number" type="xsd:integer"/>
+                <xsd:element name="Street" type="xsd:string"/>
+                <xsd:element name="City" type="xsd:string"/>
+                <xsd:element name="State">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="[A-Z][A-Z]"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Zip">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="[0-9]{5}"/>
+                            <xsd:minLength value="5"/>
+                            <xsd:maxLength value="5"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
 
-    <ha:element name="Hotel">
-            <ha:complexType>
-                <ha:sequence>
-                    <ha:element name="Name" type="ha:string" maxOccurs="1"/>
-                    <ha:element name="Phone" minOccurs="1" maxOccurs="unbounded">
-                        <ha:simpleType>
-                            <ha:restriction base="ha:string">
-                                <ha:pattern value="\d{3}-\d{3}-\d{4}"/>
-                            </ha:restriction>
-                        </ha:simpleType>
-                    </ha:element>
-                    <ha:element ref="Address"/>
-                </ha:sequence>
-                <ha:attribute name="rating" use="optional"> 
-                    <ha:simpleType>
-                        <ha:restriction base="ha:double">
-                            <ha:minInclusive value="0.00"/>
-                            <ha:maxInclusive value="5.00"/>
-                        </ha:restriction>
-                    </ha:simpleType>
-            </ha:attribute>
-            </ha:complexType>
-        </ha:element>
+    <xsd:element name="Hotel">
+            <xsd:complexType>
+                <xsd:sequence>
+                    <xsd:element name="Name" type="xsd:string" maxOccurs="1"/>
+                    <xsd:element name="Phone" minOccurs="1" maxOccurs="unbounded">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:pattern value="\d{3}-\d{3}-\d{4}"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element ref="Address"/>
+                </xsd:sequence>
+                <xsd:attribute name="rating" use="optional"> 
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:double">
+                            <xsd:minInclusive value="0.00"/>
+                            <xsd:maxInclusive value="5.00"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+            </xsd:attribute>
+            </xsd:complexType>
+        </xsd:element>
     
-        <ha:element name="Hotels">
-            <ha:complexType>
-                <ha:sequence>
-                    <ha:element ref="Hotel" minOccurs="1" maxOccurs="unbounded"/>
-                </ha:sequence>
-            </ha:complexType>
-        </ha:element>
+        <xsd:element name="Hotels">
+            <xsd:complexType>
+                <xsd:sequence>
+                    <xsd:element ref="Hotel" minOccurs="1" maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:element>
 
 
-</ha:schema>
+</xsd:schema>
