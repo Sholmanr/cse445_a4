@@ -1,57 +1,57 @@
 <?xml version="1.0"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="https://Sholmanr.github.io/cse445_a4/xml" elementFormDefault="qualified" attributeFormDefault="unqualified">
-    <xsd:element name="Hotels">
-        <xsd:complexType>
-            <xsd:sequence> 
-                <xsd:element name="Hotel" minOccurs="1" maxOccurs="unbounded">
-                    <xsd:complexType>
-                        <xsd:sequence>
-                            <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-                            <xsd:element name="Phone" minOccurs="1" maxOccurs="unbounded">
-                                <xsd:simpleType>
-                                    <xsd:restriction base="xsd:string">
-                                        <xsd:pattern value="\d{3}-\d{3}-\d{4}"/>
-                                    </xsd:restriction>
-                                </xsd:simpleType>
-                            </xsd:element>
-                            <xsd:element name="Address">
-                                <xsd:complexType>
-                                    <xsd:sequence>
-                                        <xsd:element name="Number" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
-                                        <xsd:element name="Street" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-                                        <xsd:element name="City" type="xsd:string" minOccurs="1" maxOccurs="1"/>
-                                        <xsd:element name="State" minOccurs="1" maxOccurs="1">
-                                            <xsd:simpleType>
-                                                <xsd:restriction base="xsd:string">
-                                                    <xsd:pattern value="[A-Z][A-Z]"/>
-                                                </xsd:restriction>
-                                            </xsd:simpleType>
-                                        </xsd:element>
-                                        <xsd:element name="Zip" minOccurs="1" maxOccurs="1">
-                                            <xsd:simpleType>
-                                                <xsd:restriction base="xsd:string">
-                                                    <xsd:pattern value="[0-9]{5}"/>
-                                                    <xsd:minLength value="5"/>
-                                                    <xsd:maxLength value="5"/>
-                                                </xsd:restriction>
-                                            </xsd:simpleType>
-                                        </xsd:element>
-                                    </xsd:sequence>
-                                    <xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
-                                </xsd:complexType>
-                            </xsd:element>
-                        </xsd:sequence>
-                    <xsd:attribute name="rating" use="optional"> 
-                        <xsd:simpleType>
-                            <xsd:restriction base="xsd:double">
-                                <xsd:minInclusive value="0.00"/>
-                                <xsd:maxInclusive value="5.00"/>
-                            </xsd:restriction>
-                        </xsd:simpleType>
-                </xsd:attribute>
-                </xsd:complexType>
-            </xsd:element>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-</xsd:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://Sholmanr.github.io/cse445_a4/xml" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="Hotels">
+        <xs:complexType>
+            <xs:sequence> 
+                <xs:element name="Hotel" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                            <xs:element name="Phone" minOccurs="1" maxOccurs="unbounded">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{3}-\d{3}-\d{4}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Address">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Number" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+                                        <xs:element name="Street" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                                        <xs:element name="City" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                                        <xs:element name="State" minOccurs="1" maxOccurs="1">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z][A-Z]"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Zip" minOccurs="1" maxOccurs="1">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[0-9]{5}"/>
+                                                    <xs:minLength value="5"/>
+                                                    <xs:maxLength value="5"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    <xs:attribute name="rating" use="optional"> 
+                        <xs:simpleType>
+                            <xs:restriction base="xs:double">
+                                <xs:minInclusive value="0.00"/>
+                                <xs:maxInclusive value="5.00"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
