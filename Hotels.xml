@@ -1,5 +1,5 @@
 <Hotels xmlns:xsd="http:www.w3.org/2001/XMLSchema"
-targetNamespace="http://venus.sod.asu.edu/WSRepository/xml/"
+targetNamespace="https://Sholmanr.github.io/cse445_a4/Hotels.xm"
 xmlns:bs="https://Sholmanr.github.io/cse445_a4/Hotels.xsd">
     <Hotel rating="4.2">
         <Name>
