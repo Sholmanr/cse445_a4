@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://Sholmanr.github.io/cse445_a4/xml"
-    xmlns="http://Sholmanr.github.io/cse445_a4/xml" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://Sholmanr.github.io/cse445_a4/xml" 
+targetNamespace="https://Sholmanr.github.io/cse445_a4/xml" elementFormDefault="qualified" attributeFormDefault="unqualified">
     <xsd:element name="Address">
         <xsd:complexType>
             <xsd:sequence>
