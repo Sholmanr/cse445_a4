@@ -1,164 +1,76 @@
 <?xml version="1.0"?>
 <Hotel>
     <Hotel rating="4.2">
-        <Name>
-            Westin
-        </Name>
-        <Phone>
-            480-968-8885
-        </Phone>
-        <Phone>
-            800-937-8461
-        </Phone>
+        <Name>Westin</Name>
+        <Phone>480-968-8885</Phone>
+        <Phone>800-937-8461</Phone>
         <Address NearestAirport="Sky Harbor">
-            <Number>
-                11
-            </Number>
-            <Street>
-                E. 7th Street
-            </Street>
-            <City>
-                Tempe
-            </City>
-            <State>
-                AZ
-            </State>
-            <Zip>
-                85281
-            </Zip>
+            <Number>11</Number>
+            <Street>E. 7th Street</Street>
+            <City>Tempe</City>
+            <State>AZ</State>
+            <Zip>85281</Zip>
         </Address>
     </Hotel>
 
     <Hotel rating="4.70">
-        <Name>
-            Saint John's Resort
-        </Name>
-        <Phone>
-            734-414-0600
-        </Phone>
-        <Address NearestAirport="">
-            <Number>
-                44045
-            </Number>
-            <Street>
-                Five Mile Rd
-            </Street>
-            <City>
-                Plymouth
-            </City>
-            <State>
-                MI
-            </State>
-            <Zip>
-                48170
-            </Zip>
+        <Name>Saint John's Resort</Name>
+        <Phone>734-414-0600</Phone>
+        <Address NearestAirport="Detroit Metropolitan Airport">
+            <Number>44045</Number>
+            <Street>Five Mile Rd</Street>
+            <City>Plymouth</City>
+            <State>MI</State>
+            <Zip>48170</Zip>
         </Address>
     </Hotel>
 
     <Hotel rating="4.20">
-        <Name>
-            Sheraton Kansas City Hotel at Crown Center
-        </Name>
-        <Phone>
-            
-        </Phone>
+        <Name>Sheraton Kansas City Hotel at Crown Center</Name>
+        <Phone>816-841-1000</Phone>
         <Address NearestAirport="Kansas City International Airport">
-            <Number>
-                2345
-            </Number>
-            <Street>
-                McGee St
-            </Street>
-            <City>
-                Kansas City
-            </City>
-            <State>
-                MO
-            </State>
-            <Zip>
-                64108
-            </Zip>
+            <Number>2345</Number>
+            <Street>McGee St</Street>
+            <City>Kansas City</City>
+            <State>MO</State>
+            <Zip>64108</Zip>
         </Address>
     </Hotel>
 
     <Hotel rating="4.3">
-        <Name>
-            Sheraton Maui Resort and Spa
-        </Name>
-        <Phone>
-            808-661-0031
-        </Phone>
+        <Name>Sheraton Maui Resort and Spa</Name>
+        <Phone>808-661-0031</Phone>
         <Address NearestAirport="Kapalua Airport">
-            <Number>
-                2605
-            </Number>
-            <Street>
-                Kaanapali Pkwy
-            </Street>
-            <City>
-                Lahaina
-            </City>
-            <State>
-                HI
-            </State>
-            <Zip>
-                96761
-            </Zip>
+            <Number>605</Number>
+            <Street>Kaanapali Pkwy</Street>
+            <City>Lahaina</City>
+            <State>HI</State>
+            <Zip>96761</Zip>
         </Address>
     </Hotel>
 
     <Hotel rating="4.2">
-        <Name>
-            Sheraton Detroit Novi Hotel
-        </Name>
-        <Name>
-            Sheraton Novi
-        </Name>
-        <Phone>
-            248-349-4000
-        </Phone>
+        <Name>Sheraton Detroit Novi Hotel</Name>
+        <Name>Sheraton Novi</Name>
+        <Phone>248-349-4000</Phone>
         <Address NearestAirport="Detroit Metropolitan Airport">
-            <Number>
-                21111
-            </Number>
-            <Street>
-                Haggarty Rd
-            </Street>
-            <City>
-                Novi
-            </City>
-            <State>
-                MI
-            </State>
-            <Zip>
-                48375
-            </Zip>
+            <Number>21111</Number>
+            <Street>Haggarty Rd</Street>
+            <City>Novi</City>
+            <State>MI</State>
+            <Zip>48375</Zip>
         </Address>
     </Hotel>
 
     <Hotel rating="4.7">
-        <Name>
-            Disney's Port Orleans Resort
-        </Name>
-        <Phone>
-            407-934-7639
-        </Phone>
+        <Name>Disney's Port Orleans Resort</Name>
+        <Phone>407-934-7639</Phone>
         <Address NearestAirport="Orlando International Airport">
-            <Number>
-                2201
-            </Number>
-            <Street>
-                Orlean's Dr
-            </Street>
-            <City>
-                Lake Buena Vista
-            </City>
-            <State>
-                FL
-            </State>
-            <Zip>
-                32830
-            </Zip>
+            <Number>2201</Number>
+            <Street>Orlean's Dr</Street>
+            <City>Lake Buena Vista</City>
+            <State>FL</State>
+            <Zip>32830</Zip>
         </Address>
     </Hotel>
 
@@ -166,9 +78,7 @@
         <Name>
             Disney's All-Star Movies Resort
         </Name>
-        <Phone>
-            407-934-7639
-        </Phone>
+        
         <Address NearestAirport="Orlando International Airport">
             <Number>
                 1901
@@ -179,117 +89,57 @@
             <City>
                 Lake Buena Vista
             </City>
-            <State>
-                FL
-            </State>
-            <Zip>
-                32830
-            </Zip>
+            <State>FL</State>
+            <Zip>32830</Zip>
         </Address>
     </Hotel>
 
     <Hotel rating="4.4">
-        <Name>
-            Universal's Cabana Bay Beach Resort
-        </Name>
-        <Phone>
-            407-503-4000
-        </Phone>
+        <Name>Universal's Cabana Bay Beach Resort</Name>
+        <Phone>407-503-4000</Phone>
         <Address NearestAirport="Orlando International Airport">
-            <Number>
-                6550 Adventure 
-            </Number>
-            <Street>
-                Adventure Wy
-            </Street>
-            <City>
-                Orlando
-            </City>
-            <State>
-                FL
-            </State>
-            <Zip>
-                32819
-            </Zip>
-        </Address>
+            <Number>6550</Number>
+            <Street>Adventure Wy</Street>
+            <City>Orlando</City>
+            <State>FL</State>
+            <Zip>32819</Zip>
+        
     </Hotel>
 
     <Hotel rating="4.7">
-        <Name>
-            Disney's Grand Californian Hotel and Spa
-        </Name>
-        <Phone>
-            714-635-2300
-        </Phone>
+        <Name>Disney's Grand Californian Hotel and Spa</Name>
+        <Phone>714-635-2300</Phone>
         <Address NearestAirport="Los Angeles International Airport">
-            <Number>
-                1600
-            </Number>
-            <Street>
-                Disneyland Dr
-            </Street>
-            <City>
-                Anaheim
-            </City>
-            <State>
-                CA
-            </State>
-            <Zip>
-                92802
-            </Zip>
+            <Number>1600</Number>
+            <Street>Disneyland Dr</Street>
+            <City>Anaheim</City>
+            <State>CA</State>
+            <Zip>92802</Zip>
         </Address>
     </Hotel>
 
-    <Hotel rating="">
-        <Name>
-            Hyatt Regency Los Angeles International Airport 
-        </Name>
-        <Phone>
-            424-702-1234
-        </Phone>
-        <Address NearestAirport="Los Angeles International Airport">
-            <Number>
-                6225
-            </Number>
-            <Street>
-                W Century Blvd 
-            </Street>
-            <City>
-                Los Angeles
-            </City>
-            <State>
-                CA
-            </State>
-            <Zip>
-                90045
-            </Zip>
+    <Hotel>
+        <Name>Hyatt Regency Los Angeles International Airport</Name>
+        <Phone>424-702-1234</Phone>
+        <Address>
+            <Number>6225</Number>
+            <Street>W Century Blvd</Street>
+            <City>Los Angeles</City>
+            <State>CA</State>
+            <Zip>90045</Zip>
         </Address>
     </Hotel>
 
-    <Hotel rating="">
-        <Name>
-            Stone Chalet Bed and Breakfast Inn
-        </Name>
-        <Phone>
-            866-382-6542
-        </Phone>
+    <Hotel>
+        <Name>Stone Chalet Bed and Breakfast Inn</Name>
+        <Phone>866-382-6542</Phone>
         <Address NearestAirport="Detroit Metropolitan Airport">
-            <Number>
-                1917
-            </Number>
-            <Street>
-                Washtenaw Ave
-            </Street>
-            <City>
-                Ann Arbor
-            </City>
-            <State>
-                MI
-            </State>
-            <Zip>
-                48104
-            </Zip>
+            <Number>1917</Number>
+            <Street>Washtenaw Ave</Street>
+            <City>Ann Arbor</City>
+            <State>MI</State>
+            <Zip>48104</Zip>
         </Address>
     </Hotel>
 
-</Hotel>
+</Hotels>
