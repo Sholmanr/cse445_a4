@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels xmlns="http://www.venus.sod.asu.edu/WSRepository/xml">
+<Hotel xmlns="http://www.venus.sod.asu.edu/WSRepository/xml">
     <Hotel rating="4.2">
         <Name>Westin</Name>
         <Phone>480-968-8885</Phone>
@@ -139,6 +139,6 @@
             <City>Ann Arbor</City>
             <State>MI</State>
             <Zip>48104</Zip>
-        </Address>
+        
     </Hotel>
-</Hotels>
+</Hotel>
