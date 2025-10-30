@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Hotels>
+<Hotel>
     <Hotel rating="4.2">
         <Name>Westin</Name>
         <Phone>480-968-8885</Phone>
@@ -139,7 +139,5 @@
             <City>Ann Arbor</City>
             <State>MI</State>
             <Zip>48104</Zip>
-        </Address>
     </Hotel>
-
-</Hotels>
+</Hotel>
