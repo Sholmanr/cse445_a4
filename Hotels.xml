@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels xmlns="http://Sholmanr.github.io/cse445_a4/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://Sholmanr.github.io/cse445_a4/ Hotels.xsd">
+<Hotels xmlns:xs="https://raw.githubusercontent.com/Sholmanr/cse445_a4/refs/heads/main/" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="https://raw.githubusercontent.com/Sholmanr/cse445_a4/refs/heads/main/ https://raw.githubusercontent.com/Sholmanr/cse445_a4/refs/heads/main/Hotels.xsd">
     <Hotel rating="4.2">
         <Name>Westin</Name>
         <Phone>480-968-8885</Phone>
@@ -141,5 +141,4 @@ xsi:schemaLocation="http://Sholmanr.github.io/cse445_a4/ Hotels.xsd">
             <Zip>48104</Zip>
         </Address>
     </Hotel>
-
 </Hotels>

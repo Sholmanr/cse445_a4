@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://Sholmanr.github.io/cse445_a4/" elementFormDefault="qualified" attributeFormDefault="unqualified">
-    <xs:element name="Hotels">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://raw.githubusercontent.com/Sholmanr/cse445_a4/refs/heads/main/Hotels" xmlns="https://raw.githubusercontent.com/Sholmanr/cse445_a4/refs/heads/main/Hotels" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:annotation>
+    <xs:documentation>
+        CSE445 Assignment 4 
+    </xs:documentation>
+</xs:annotation>   
+<xs:element name="Hotels">
         <xs:complexType>
             <xs:sequence> 
                 <xs:element name="Hotel" minOccurs="1" maxOccurs="unbounded">
